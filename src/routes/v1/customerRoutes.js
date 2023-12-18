@@ -38,7 +38,7 @@ const customerController = require('../../controllers/CustomerController')
 // });
 
 router.post('/', customerController.create);
-router.get('/getcustomer', customerController.get);
+router.get('/getcustomer', customerController.search);
 router.put('/putcustomer', customerController.update);
 router.delete('/deletecustomer', customerController.delete);
 

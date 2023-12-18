@@ -37,7 +37,7 @@ const productController = require('../../controllers/ProductController')
 //   res.status(200).json({ msg: `Deleted data with ID ${id}` });
 // });
 router.post('/', productController.create);
-router.get('/getproduct', productController.get);
+router.get('/getproduct', productController.search);
 router.put('/putproduct', productController.update);
 router.delete('/deleteproduct', productController.delete);
 

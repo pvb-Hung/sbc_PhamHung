@@ -4,6 +4,10 @@ var bodyParser = require('body-parser')
 const API_V1 = require('./routes/v1/index');
 const app = express();
 const errorHandle = require('./middleware/errorHandler');
+const db = require('./configs/mongodb');
+
+// Connect to DB
+db.connect();
 
 const port = 3000;
 

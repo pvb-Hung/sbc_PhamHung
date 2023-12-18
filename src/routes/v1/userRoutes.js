@@ -38,7 +38,7 @@ const userController = require('../../controllers/UserController')
 // });
 
 router.post('/', userController.create);
-router.get('/getuser', userController.get);
+router.get('/getuser', userController.search);
 router.put('/putuser', userController.update);
 router.delete('/deleteuser', userController.delete);
 
